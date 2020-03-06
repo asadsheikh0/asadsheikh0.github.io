@@ -1,0 +1,155 @@
+body {
+    background-color: #c4e9f2;
+    color: #495B60;
+    font-family: "Chivo";
+  }
+
+#title {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 84px;
+    line-height: 100px;
+    text-align: center;
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    font-size: 36px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+li {
+    display: inline;
+    margin-right: 50px;
+}
+
+.text {
+    width: 8em;
+    font-size: 36px;
+    text-align: left;
+    margin-left: 500px;
+}
+
+.glazing button {
+    background-color: #c4e9f2;
+    border: 2px solid #495B60;
+    color: #495B60;
+    border-radius: 20px;
+    padding: 13px 20px;
+    font-size: 14px;
+    margin: 0 5% 2% 2%;
+    outline: none;
+    transition-duration: 0.2s;
+}
+
+.quantity{
+    margin-left: 240px;
+}
+
+.quantity p{
+    font-size: 48px;
+}
+
+.glazing{
+    margin-left: 240px;
+}
+
+.glazing p{
+    font-size: 48px;
+}
+
+.quantity button {
+    border: 2px solid #495B60;
+    background-color: #c4e9f2;
+    color: #495B60;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 14px;
+    margin: 0 5% 2% 3%;
+    outline: none;
+    transition-duration: 0.2s;
+}
+
+.opener {
+    font-size: 24px;
+    text-align: left;
+    margin-left: 500px;
+    width: 10em;
+}
+
+#homeimage {
+    width: 386px;
+    height: 258.4px;
+    float: right;
+    margin: 0px 0px 15px 15px;
+    text-align: right;
+    margin-right: 500px;
+}
+
+.browse {
+    margin-left: 240px;
+    font-size: 48px;
+}
+
+.grid {
+    display: inline-grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-self: center;
+    margin-left: 240px;
+}
+
+.item {
+    background: #495B60;
+    color: white;
+    font-size: 36px;
+    width: 345px;
+    height: 188px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.product {
+    font-size: 60px;
+    margin-left: 240px;
+}
+
+#options {
+    font-size: 24px;
+    margin-left: 240px;
+}
+
+#orig {
+    height: 84px;
+    width: 84px;
+}
+
+#order {
+    background: #495B60;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 300px;
+    height: 75px;
+    margin-left: 240px;
+
+}
+
+#cart {
+    font-size: 36px;
+}

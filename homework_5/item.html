@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="main.js" type="text/javascript"> </script>
         <!-- styles -->
         <link rel="stylesheet" type="text/css" href="style.css">
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Chivo:300&display=swap" rel="stylesheet"> 
+
     </head>
     <body>
         <h1 id = "title">bun bun bake shop</h1>
@@ -25,26 +27,34 @@
 
         <div class="quantity">
             <p>number of rolls: </p>
-            <ul id = "options">
-                <li>1</li>
-                <li>3</li>
-                <li>6</li>
-                <li>12</li>
-            </ul>
+            <div class="number">
+                <button id="one" onclick=pickQuantity(this)>
+                    1</button>
+                <button id="three" onclick=pickQuantity(this)>
+                    3</button>
+                <button id="six" onclick=pickQuantity(this)>
+                    6</button>
+                <button id="twelve" onclick=pickQuantity(this)>
+                    12</button>
+            </div>
 
         </div>
 
         <div class="glazing">
             <p>glazing: </p>
-            <ul id="options">
-                <li>none</li>
-                <li>sugar-milk</li>
-                <li>vanilla-milk</li>
-                <li>double-chocolate</li>
-            </ul>
+            <div class="flavor">
+                <button id="none" onclick=pickGlaze(this)>
+                    None</button>
+                <button id="sugar" onclick=pickGlaze(this)>
+                    Sugar-Milk</button>
+                <button id="vanilla" onclick=pickGlaze(this)>
+                    Vanilla-Milk</button>
+                <button id="chocolate" onclick=pickGlaze(this)>
+                    Double-Chocolate</button>
+            </div>
         </div>
 
-        <div class="order">add to order</div>
+        <div id="order" onclick=addRoll(this.parentNode)>add to order</div>
 
     </body>
 </html>

@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(157, 198, 209);
+    background-color: #c4e9f2;
     color: #495B60;
     font-family: "Chivo";
   }
@@ -36,6 +36,46 @@ li {
     font-size: 36px;
     text-align: left;
     margin-left: 500px;
+}
+
+.glazing button {
+    background-color: #c4e9f2;
+    border: 2px solid #495B60;
+    color: #495B60;
+    border-radius: 20px;
+    padding: 13px 20px;
+    font-size: 14px;
+    margin: 0 5% 2% 2%;
+    outline: none;
+    transition-duration: 0.2s;
+}
+
+.quantity{
+    margin-left: 240px;
+}
+
+.quantity p{
+    font-size: 48px;
+}
+
+.glazing{
+    margin-left: 240px;
+}
+
+.glazing p{
+    font-size: 48px;
+}
+
+.quantity button {
+    border: 2px solid #495B60;
+    background-color: #c4e9f2;
+    color: #495B60;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 14px;
+    margin: 0 5% 2% 3%;
+    outline: none;
+    transition-duration: 0.2s;
 }
 
 .opener {
@@ -80,10 +120,6 @@ li {
 
 }
 
-p {
-    font-size: 48px;
-    margin-left: 240px;
-}
 
 .product {
     font-size: 60px;
@@ -100,7 +136,7 @@ p {
     width: 84px;
 }
 
-.order {
+#order {
     background: #495B60;
     color: white;
     font-size: 36px;
