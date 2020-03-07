@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <script src="main.js" type="text/javascript"> </script>
     <!-- styles -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- fonts -->
@@ -8,7 +9,7 @@
     </head>
     <title>bun bun bake shop</title>
         <meta charset="UTF-8">
-    <body>
+    <body onload=fillCart()>
         <h1 id = "title">bun bun bake shop</h1>
         <div class = "nav">
             <ul>
@@ -20,10 +21,13 @@
             </ul>
         </div>
 
-        <div>
+        <div class = "show">
             <p>cart</p>
-            <p id = "cart">your order:</p>
+            <p>your order:</p>
+            <ul class="cart" id="cart">
+            </ul>
         </div>
+        
 
 
 

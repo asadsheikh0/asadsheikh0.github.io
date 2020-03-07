@@ -8,8 +8,34 @@ var originalRoll = new OriginalRoll(1, "none");
 
 var rollCart = [];
 
+
 function addRoll() {
-    rollCart.push(originalRoll)
+    var stringInfo = 'Original Roll ' + originalRoll.num + ' with ' + originalRoll.glaze + ' glazing.'
+    if (sessionStorage.rolls) {
+        sessionStorage.rolls = Number(sessionStorage.rolls) + 1;
+        sessionStorage.cart = sessionStorage.cart.concat(',',stringInfo);
+    }
+    else {
+        sessionStorage.rolls = 1;
+        sessionStorage.cart = stringInfo;
+    }
+}
+
+
+function fillCart() {
+    var total = Number(sessionStorage.rolls);
+    var rolls = sessionStorage.cart.split(',');
+    var i, printInfo;
+    var cart = document.getElementById("cart");
+    if (total > 0) {
+        for (i = 0; i < total; i += 1) {
+            var newRoll = document.createElement("li");
+            printInfo = rolls[i];
+            newRoll.appendChild(document.createTextNode(printInfo));
+            cart.appendChild(newRoll);
+            cart.appendChild(document.createElement('br'));
+        }
+    }
 }
 
 
