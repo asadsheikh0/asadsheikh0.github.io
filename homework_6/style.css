@@ -154,3 +154,27 @@ li {
 .show p {
     font-size: 36px;
 }
+
+#cart-title {
+    font-size: 60px;
+    margin-left: 200px;
+
+}
+
+#order-title {
+    font-size: 48px;
+    margin-left: 200px;
+}
+
+h3 {
+    margin-left: 200px;
+    font-size: 36px;
+}
+
+h4 {
+    margin-left: 240px;
+}
+
+.remove {
+    margin-left: 240px;
+}
