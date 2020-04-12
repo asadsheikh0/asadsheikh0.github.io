@@ -1,0 +1,90 @@
+.site-container {
+    margin: 0 auto;
+    width:100%;
+    overflow: hidden;
+	min-height:100%;
+}
+
+.right-float { 
+	float: right; 
+}
+
+/* css code for navbar modified from https://codepen.io/stevenfabre/pen/LGvzk */
+
+#hamburger-icon {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    display: block;
+    margin: 100px auto 50px auto;
+  }
+  #hamburger-icon .line {
+    display: block;
+    background: #ecf0f1;
+    width: 100px;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    border-radius: 4px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+  }
+  #hamburger-icon .line.line-1 {
+    top: 0;
+  }
+  #hamburger-icon .line.line-2 {
+    top: 50%;
+  }
+  #hamburger-icon .line.line-3 {
+    top: 100%;
+  }
+  #hamburger-icon:hover .line-1, #hamburger-icon:focus .line-1 {
+    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+  }
+  #hamburger-icon:hover .line-3, #hamburger-icon:focus .line-3 {
+    transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    -moz-transform: translateY(4px);
+  }
+  #hamburger-icon.active .line-1 {
+    transform: translateY(25px) translateX(0) rotate(45deg);
+    -webkit-transform: translateY(25px) translateX(0) rotate(45deg);
+    -moz-transform: translateY(25px) translateX(0) rotate(45deg);
+  }
+  #hamburger-icon.active .line-2 {
+    opacity: 0;
+  }
+  #hamburger-icon.active .line-3 {
+    transform: translateY(-25px) translateX(0) rotate(-45deg);
+    -webkit-transform: translateY(-25px) translateX(0) rotate(-45deg);
+    -moz-transform: translateY(-25px) translateX(0) rotate(-45deg);
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: #95a5a6;
+    margin: 0.5em 1.5em;
+    display: inline-block;
+  }
+  a:hover, a:focus {
+    color: #ecf0f1;
+  }
+
+
+nav#main-nav {
+    float: left;
+}
+	
+nav#main-nav ul {
+	list-style: none;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	z-index: 10;
+	}
+
+
