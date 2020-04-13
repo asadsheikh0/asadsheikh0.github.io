@@ -1,27 +1,17 @@
-.site-container {
-    margin: 0 auto;
-    width:100%;
-    overflow: hidden;
-	min-height:100%;
-}
-
-.right-float { 
-	float: right; 
-}
-
 /* css code for navbar modified from https://codepen.io/stevenfabre/pen/LGvzk */
 
 #hamburger-icon {
     width: 100px;
     height: 50px;
     position: relative;
-    display: block;
-    margin: 100px auto 50px auto;
+    display: inline-block;
+    margin: 50px auto 50px auto;
   }
+
   #hamburger-icon .line {
-    display: block;
-    background: #ecf0f1;
-    width: 100px;
+    display: inline-block;
+    background: #4A5978;
+    width: 75px;
     height: 8px;
     position: absolute;
     left: 0;
@@ -64,27 +54,57 @@
   }
   
   
-  a {
-    text-decoration: none;
-    color: #95a5a6;
-    margin: 0.5em 1.5em;
-    display: inline-block;
-  }
-  a:hover, a:focus {
-    color: #ecf0f1;
-  }
-
+a {
+  text-decoration: none;
+  color: #95a5a6;
+  margin: 0.5em 1.5em;
+  display: inline-block;
+}
+a:hover, a:focus {
+  color: #4A5978;
+  text-decoration: none;
+}
 
 nav#main-nav {
-    float: left;
-}
+	float: right;
+	}
 	
 nav#main-nav ul {
 	list-style: none;
 	text-align: center;
 	margin: 0 auto;
 	position: relative;
-	z-index: 10;
+  z-index: 10;
+  float:right;
 	}
 
+nav#main-nav ul > li {
+	margin: 0 0 0 20px;
+	padding: 0;
+	display: inline-block;
+	position: relative;
+	transition: top 0.3s ease 0.4s, opacity 0.3s ease;
+}
+
+#name-title h1{
+  position: relative;
+  font-size: 191px;
+  text-align: center;
+  color: #4A5978;
+  text-shadow: 0px 3.83299px 3.83299px rgba(0, 0, 0, 0.25);
+}
+
+#name-title h2{
+  position: relative;
+  font-size: 60px;
+  text-align: center;
+  color: #494C55;
+}
+
+#media img{
+  float:left;
+  width: 266px;
+  height: 273px;
+  border-radius: 168.5px;
+}
 
