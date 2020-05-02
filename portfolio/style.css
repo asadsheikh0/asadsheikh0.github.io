@@ -1,104 +1,20 @@
-/* css code for navbar modified from https://codepen.io/stevenfabre/pen/LGvzk */
-
-#hamburger-icon {
-    width: 100px;
-    height: 50px;
-    position: relative;
-    display: inline-block;
-    margin: 50px auto 50px auto;
-  }
-
-  #hamburger-icon .line {
-    display: inline-block;
-    background: #4A5978;
-    width: 75px;
-    height: 8px;
-    position: absolute;
-    left: 0;
-    border-radius: 4px;
-    transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-  }
-  #hamburger-icon .line.line-1 {
-    top: 0;
-  }
-  #hamburger-icon .line.line-2 {
-    top: 50%;
-  }
-  #hamburger-icon .line.line-3 {
-    top: 100%;
-  }
-  #hamburger-icon:hover .line-1, #hamburger-icon:focus .line-1 {
-    transform: translateY(-4px);
-    -webkit-transform: translateY(-4px);
-    -moz-transform: translateY(-4px);
-  }
-  #hamburger-icon:hover .line-3, #hamburger-icon:focus .line-3 {
-    transform: translateY(4px);
-    -webkit-transform: translateY(4px);
-    -moz-transform: translateY(4px);
-  }
-  #hamburger-icon.active .line-1 {
-    transform: translateY(25px) translateX(0) rotate(45deg);
-    -webkit-transform: translateY(25px) translateX(0) rotate(45deg);
-    -moz-transform: translateY(25px) translateX(0) rotate(45deg);
-  }
-  #hamburger-icon.active .line-2 {
-    opacity: 0;
-  }
-  #hamburger-icon.active .line-3 {
-    transform: translateY(-25px) translateX(0) rotate(-45deg);
-    -webkit-transform: translateY(-25px) translateX(0) rotate(-45deg);
-    -moz-transform: translateY(-25px) translateX(0) rotate(-45deg);
-  }
-  
-  
-a {
-  text-decoration: none;
-  color: #95a5a6;
-  margin: 0.5em 1.5em;
-  display: inline-block;
-}
-a:hover, a:focus {
-  color: #4A5978;
-  text-decoration: none;
-}
-
-nav#main-nav {
-	float: right;
-	}
-	
-nav#main-nav ul {
-	list-style: none;
-	text-align: center;
-	margin: 0 auto;
-	position: relative;
-  z-index: 10;
-  float:right;
-	}
-
-nav#main-nav ul > li {
-	margin: 0 0 0 20px;
-	padding: 0;
-	display: inline-block;
-	position: relative;
-	transition: top 0.3s ease 0.4s, opacity 0.3s ease;
-}
 
 #name-title h1{
   position: relative;
-  font-size: 191px;
+  font-size: 175px;
   text-align: center;
   color: #4A5978;
   text-shadow: 0px 3.83299px 3.83299px rgba(0, 0, 0, 0.25);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
 }
 
 #name-title h2{
   position: relative;
-  font-size: 60px;
+  font-size: 56px;
   text-align: center;
-  color: #494C55;
+  color: #B3BDBC;
 }
 
 #media img{
@@ -107,4 +23,89 @@ nav#main-nav ul > li {
   height: 273px;
   border-radius: 168.5px;
 }
+
+div.col-sm {
+  font-size: 40px;
+  width: 340px;
+  height: 340px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #6F809A;
+  border-radius: 36px;
+  color: #E8DBD2;
+}
+
+body {
+  font-family:Montserrat;
+  background: #E5E5E5
+}
+
+/* from https://codepen.io/j_holtslander/pen/doQggE */
+/* USING BOOTSTRAP 3.0.3 */
+/* USING BOOTSTRAP 3.0.3 */
+
+nav .navbar-brand {
+  font-size: 30px;
+}
+nav .navbar-toggle {
+  margin: 13px 15px 13px 0;
+}
+nav a {
+  font-size: 18px;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+nav.navbar.shrink {
+  min-height: 35px;
+}
+nav.navbar.shrink .navbar-brand {
+  font-size: 25px;
+}
+nav.navbar.shrink a {
+  font-size: 15px;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+}
+nav.navbar.shrink .navbar-toggle {
+  margin: 8px 15px 8px 0;
+  padding: 4px 5px;
+}
+
+#portfolio-title {
+  font-size: 122.431px;
+  line-height: 149px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #B3BDBC;
+  text-shadow: 0px 2.44862px 2.44862px rgba(0, 0, 0, 0.25);
+  margin-bottom: 60px;
+}
+
+#name-logo {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 86px;
+
+  color: #4A5978;
+
+  text-shadow: 0px 1.41228px 1.41228px rgba(0, 0, 0, 0.25);
+}
+
+#page-link {
+  font-size: 40px;
+  width: 340px;
+  height: 340px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #6F809A;
+  border-radius: 36px;
+  color: #E8DBD2;
+  text-decoration: none;
+}
+
 
