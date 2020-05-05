@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Asad Sheikh</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script type="text/javascript" src="main.js"></script>
@@ -35,10 +36,10 @@
         </div>
       </nav>
       <div class="row" id="my-info">
-        <div class="col-md-5">
+        <div data-aos="fade-right" class="col-md-6">
           <img src="me.jpg" id="my-pic">
         </div>
-        <div class="col-md-7" id="about-bio">
+        <div data-aos="fade-left" class="col-md-6" id="about-bio">
           <h2>Hi, I'm Asad!</h2>
           <p>I'm currently a rising junior at Carnegie Mellon University studying
              Statistics and Machine Learning with an additional major in Human-Computer 
@@ -55,6 +56,10 @@
           </p>
         </div>
       </div>
-
+      
     </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
