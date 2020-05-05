@@ -132,3 +132,42 @@ nav.navbar.shrink .navbar-toggle {
   font-weight: bold;
 }
 
+#project-title {
+  font-size: 122.431px;
+  line-height: 149px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #B3BDBC;
+  text-shadow: 0px 2.44862px 2.44862px rgba(0, 0, 0, 0.25);
+}
+
+#project-description p{
+  color: #6F809A;
+  font-size: 30px;
+  margin-bottom: 0rem;
+}
+
+#team p {
+  font-size: 20px;
+}
+
+.title p{
+  font-size: 60px;
+  font-weight: bold;
+  color: #B3BDBC;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 300;
+  color: #494C55;
+  padding: 0;
+}
+
+#project-image {
+  width: 90%;
+  margin-left: 2rem;
+  border-radius: 10px;
+}
+
