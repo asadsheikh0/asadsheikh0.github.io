@@ -165,7 +165,7 @@ nav.navbar.shrink .navbar-toggle {
   padding: 0;
 }
 
-#project-image {
+.project-image {
   width: 90%;
   margin-left: 2rem;
   border-radius: 10px;

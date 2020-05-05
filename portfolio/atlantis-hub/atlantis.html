@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="../assets/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script type="text/javascript" src="../assets/main.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <!-- code taken from https://codepen.io/j_holtslander/pen/doQggE -->
@@ -22,7 +23,7 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ml-auto">
+                  <ul class="navbar-nav ml-auto" data-aos="fade-left" data-aos-duration="1000">
                     <li class="nav-item">
                       <a class="nav-link" href="../portfolio.html">portfolio <span class="sr-only">(current)</span></a>
                     </li>
@@ -35,8 +36,8 @@
                   </ul>
                 </div>
             </nav>
-            <div class ="row" id="project-title">atlantis hub</div>
-            <div id="project-description">
+            <div class ="row" id="project-title" data-aos="fade-right" data-aos-duration="1000">atlantis hub</div>
+            <div id="project-description" data-aos="fade-right" data-aos-duration="1000">
                 <div class="row">
                     <p>data-driven display</p>
                 </div>
@@ -48,11 +49,11 @@
                 </div>
             </div>
             <div id="project-body">
-                <div class="row title">
+                <div class="row title" data-aos="fade-right" data-aos-duration="1000">
                     <p>overview</p>
                 </div>
                 <div class="row" id="overview-intro">
-                    <div class="col-md-6 description">
+                    <div class="col-md-6 description" data-aos="fade-right" data-aos-duration="1000">
                         <p>This project in Interaction Design Studio I was about
                             creating a data-driven display for Atlantis Hub, a fictitious
                             travel station located in the San Juan islands. As a group, 
@@ -65,17 +66,124 @@
                         </p>
                     </div>
                     <div class="col-md-6">
-                        <img src="../assets/atlantis-hub.png" id="project-image">
+                        <img src="atlantis-hub.png" class="project-image" data-aos="fade-left" data-aos-duration="1500">
                     </div>
                 </div>
-                <div class="row title">
+                <div class="row title" data-aos="fade-right" data-aos-duration="1500">
                     <p>persona analysis</p>
                 </div>
                 <div class="row" id="persona">
-                    
+                    <div class="col-md-7 description" data-aos="fade-right" data-aos-duration="1500">
+                        <p>We were given the personas of 3 individuals who would
+                            interact with the display in 3 different ways. We first
+                            went through each persona and determined what they valued
+                            in their travel experience and how we could include that
+                            in a design.
+                        </p>
+                        <p>As we analyzed each persona, we looked at the stakeholder's
+                            needs and goals and how that translated into the design.
+                            We decided that the design of our dashboard should advertise
+                            the PTF pass, which was the stakeholder's new creation to
+                            encourage travel among the San Juan islands.
+                        </p>
+                        <p>For both of the users, we looked at their needs in a travel
+                            experience as well as potential use cases for the display
+                            for their travel needs. For each of the users, we then
+                            plotted their travel preferences for both mode of transport
+                            as well as how efficient they wanted their travel experience
+                            to be.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="atlantis-personas.png" class="project-image" data-aos="fade-left" data-aos-duration="1500">
+                    </div>
+                </div>
+                <div class="row title" data-aos="fade-right" data-aos-duration="1500">
+                    <p>data analysis</p>
+                </div>
+                <div class="row" id="data">
+                    <div class="col-md-6 description" data-aos="fade-right" data-aos-duration="1500">
+                        <p>The next step in the process was to look at the data
+                            that had been given to us to present. We were essentially
+                            given a very large spreadsheet and had to filter out
+                            information that we believed was not needed for the display.
+                        </p>
+                        <p>We chose to organize all travel data first by location,
+                            and then by mode, consistent with what already exists
+                            in terms of travel dashboards such as flight status monitors.
+                             This way, when the users first approach the
+                            display, they would first find their destination
+                            and then see it grouped by mode of transport.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="atlantis-hierarchy.png" class="project-image" data-aos="fade-left" data-aos-duration="1500">
+                    </div>
+                </div>
+                <div class="row title" data-aos="fade-right" data-aos-duration="1500">
+                    <p>data + personas</p>
+                </div>
+                <div class="row" id="data">
+                    <div class="col-md-5 description" data-aos="fade-right" data-aos-duration="1500">
+                        <p>In addition to analyzing the data given to us,
+                            we also analyzed the needs of the personas to
+                            graph where they stand on a concept map of
+                            speed vs. flexibility. From there, we identified
+                            what each of the personas would need to see
+                            in a display, and also determined what
+                            information did not need to be included in the
+                            final display.
+                        </p>
+                    </div>
+                    <div class="col-md-7">
+                        <img src="atlantis-data.png" class="project-image" data-aos="fade-left" data-aos-duration="1500">
+                    </div>
+                </div>
+                <div class="row title" data-aos="fade-right" data-aos-duration="1500">
+                    <p>initial iteration</p>
+                </div>
+                <div class="row" id="data">
+                    <div class="col-md-6 description" data-aos="fade-right" data-aos-duration="1500">
+                        <p>After consolidating our data, we knew we
+                            wanted to sort our data Destination first. Our
+                            initial, low-fidelity model illustrates just that,
+                            with a map for context center-focused on the
+                            display.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="atlantis-low.png" class="project-image" data-aos="fade-left" data-aos-duration="1500">
+                    </div>
+                </div>
+                <div class="row title" data-aos="fade-right" data-aos-duration="1500">
+                    <p>digital iteration</p>
+                </div>
+                <div class="row" id="data">
+                    <div class="col-md-5 description" data-aos="fade-right" data-aos-duration="1500">
+                        <p>Once we had the ground work for our initial
+                            display, we created a digital version to
+                            help us understand not only the content, but
+                            how the content reads.</p>
+                        <p>We presented this to our peers, and
+                            understood that though this was a good
+                            start, we still had a way to go. Some of the
+                            feedback included that there were not
+                            enough options listed; moreover, not all of
+                            the travel destinations were listed at the
+                            same time, making a user have to wait for the
+                            display rotation to restart.
+                        </p>
+                    </div>
+                    <div class="col-md-7">
+                        <img src="atlantis-first.png" class="project-image" data-aos="fade-left" data-aos-duration="1500">
+                    </div>
                 </div>
             </div>
 
         </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
