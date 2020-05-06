@@ -171,3 +171,14 @@ nav.navbar.shrink .navbar-toggle {
   border-radius: 10px;
 }
 
+.project a {
+    font-size: 40px;
+    width: 340px;
+    height: 340px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #6F809A;
+    border-radius: 36px;
+    color: #E8DBD2;
+    text-decoration: none;
+  }
