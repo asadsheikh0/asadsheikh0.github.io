@@ -4,6 +4,7 @@
     <title>Artist Gala Theme Reveal</title>
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/image-puzzle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/image-puzzle.js"></script>
@@ -11,10 +12,10 @@
 </head>
 <body>
     <div id="collage">
-        <h2>Artist Gala Theme Reveal</h2>
+        <h2>USIA ARTIST GALA THEME REVEAL</h2>
         <hr />
         <div id="playPanel" style="padding:5px;display:none;">
-            <h2>Move the pieces to reveal the gala theme!</h2> <hr />
+            <h3>Move the pieces to reveal the gala theme!</h3> <hr />
             <div style="display:inline-block; margin:auto; width:95%; vertical-align:top;">
                 <ul id="sortable" class="sortable"></ul>
                 <div id="actualImageBox">
@@ -38,13 +39,19 @@
                     </div> -->
                 </div>
             </div>
+            <div id="skip">
+                <button type="button" onclick="skip();">Skip</button>
+            </div>
         </div>
+        
         <div id="gameOver" style="display:none;">
-            <div style="background-color: #fc9e9e; padding: 5px 10px 20px 10px; text-align: center; ">
-                <h2 style="text-align:center">Game Over!!</h2>
-                Congratulations!! <br /> You have completed this picture.
-                <!-- <br />
-                Steps: <span class="stepCount">0</span> steps.
+            <div style="background-color: #427fc8; padding: 5px 10px 20px 10px; text-align: center; ">
+                <h3 style="text-align:center">You did it!</h3>
+                Congratulations!! <br /> You have revealed the theme of the 2023 USIA Artist Gala! 
+                
+                <br /> Learn more about the theme below. 
+                <br />
+                <!-- Steps: <span class="stepCount">0</span> steps.
                 <br />
                 Time Taken: <span class="timeCount">0</span> seconds<br /> -->
                 <div>
@@ -82,6 +89,22 @@
                 alert('Developed by Anurag Gandhi. \nHe can be contacted at: soft.gandhi@gmail.com');
             }
         </script>
+    </div>
+    <div id="theme-reveal" style="display:none;">
+        <h2>About Form&Function</h2>
+        <p>Form&Function celebrates the interplay of visual beauty and practicality. It invites us to appreciate how art, design, and creative endeavors can be both visually captivating and purpose-driven. This theme emphasizes that the shape, structure, and style of artistic creations should not merely be ornamental but should also serve a meaningful function or purpose.
+            <br />
+            In the world of art and design, 'form' represents the visual aspects, such as the aesthetics, composition, and the artistic choices made by creators. 'Function,' on the other hand, signifies the practical aspects, including the intended use, functionality, and how the artwork or design serves a specific role or solves a problem.
+            <br />
+            Form&Function encourages us to explore the balance between these two elements, appreciating how they coexist and influence each other. It reminds us that art can be not only a source of inspiration but also a tool for innovation and problem-solving. We encourage you to delve into the intricate relationship between the beauty we perceive and the purpose it fulfills, creating a rich and thought-provoking experience.
+            </p>
+
+        <h2>Getting Ready for USIA</h2>
+        <ul>
+            <li>Date & Time</li>
+            <li>Link to RSVP</li>
+            <li>Dress Code Overview</li>
+        </ul>
     </div>
 </body>
 </html>

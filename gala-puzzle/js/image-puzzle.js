@@ -32,7 +32,8 @@ var imagePuzzle = {
 
                 currentList = $('#sortable > li').map(function (i, el) { return $(el).attr('data-value'); });
                 if (isSorted(currentList))
-                    $('#actualImageBox').empty().html($('#gameOver').html());
+                    skip()
+                    
                 else {
                     var now = new Date().getTime();
                     imagePuzzle.stepCount++;
@@ -45,7 +46,7 @@ var imagePuzzle = {
             }
         });
     },
-
+    
     setImage: function (images, gridSize) {
         console.log(gridSize);
         gridSize = 3; // If gridSize is null or not passed, default it as 4.
@@ -88,4 +89,9 @@ $.fn.randomize = function (selector) {
         }).remove().appendTo(this);
     });
     return this;
+};
+
+function skip() {  
+    $('#actualImageBox').empty().html($('#gameOver').html());
+    $("#theme-reveal").css("display", "block");
 };
