@@ -60,7 +60,7 @@ var imagePuzzle = {
             var xpos = (percentage * (i % gridSize)) + '%';
             var ypos = (percentage * Math.floor(i / gridSize)) + '%';
             var li = $('<li class="item" data-value="' + (i) + '"></li>').css({
-                'background-image': 'url(' + image.src + ')',
+                'background-image': 'url(' + 'images/gala-final-picture.png' + ')',
                 'background-size': (gridSize * 100) + '%',
                 'background-position': xpos + ' ' + ypos,
                 'width': 400 / gridSize,

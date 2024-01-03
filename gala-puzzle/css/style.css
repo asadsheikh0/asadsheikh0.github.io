@@ -1,24 +1,85 @@
 ﻿body {
-    font-family: "Inter", sans-serif;
+    font-family: "Nohemi Light";
     margin:0;
-    background-color:#000000;
+    background-color:#f2f2da;
+    font-size: 100%;
 }
 h2{
+    font-family: 'Nohemi Bold';
     font-weight:normal;
     text-align:center;
-    color:#FFFFFF;
+    color:#26397c;
     font-weight: bold;
+    font-size: 2.5em;
     
 }
 h3{
+    font-family: 'Nohemi Light';
     font-weight:normal;
-    margin:3px 0px;
+    /* margin:3px 0px; */
     text-align:center;
+    color:#26397c;
+    font-size: 1.875em;
 }
 p{
-    color:#FFFFFF;
+    color:#26397c;
+    font-size: 1em;
 }
+
 
 #theme-reveal{
     color:#FFFFFF;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 45%;
+    padding: 0 4px;
+    
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 65%;
+    height: auto;
+    animation: rotation 10s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .background{
+    color: #999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+@font-face {
+    font-family: 'Nohemi Bold';
+    src: url('fonts/Nohemi-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Nohemi Light';
+    src: url('fonts/Nohemi-Light.woff') format('woff');
+}
+
+.theme-description {
+    margin: auto;
+    width: 50%;
 }

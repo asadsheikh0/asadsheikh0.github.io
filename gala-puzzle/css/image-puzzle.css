@@ -5,12 +5,13 @@
 }
 
 #collage #playPanel {
-    background-color:#537d23;
+    /* background-color:#537d23; */
     padding:10px 0px;
     margin: 10px auto;
     max-width:800px;
     width:95%;
 }
+
 
 #collage #actualImageBox {
     display: inline-block;
@@ -60,11 +61,13 @@
     }
 
 #collage button  {
-    background-color:#f5f2f2;
-    border:1px solid #cce;
+    background-color: #26397c;
+    border:1px solid #26397c;
     display: inline;
+    color:#f2f2da;
     font-size: 14px;
     height: auto;
     width: auto;
-    padding: 3px 8px;
+    padding: 8px 8px;
+    font-family: 'Nohemi Light';
 }

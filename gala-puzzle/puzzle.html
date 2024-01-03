@@ -15,7 +15,7 @@
         <h2>USIA ARTIST GALA THEME REVEAL</h2>
         <hr />
         <div id="playPanel" style="padding:5px;display:none;">
-            <h3>Move the pieces to reveal the gala theme!</h3> <hr />
+            <h3>Move the pieces to reveal the artist gala theme!</h3> <hr />
             <div style="display:inline-block; margin:auto; width:95%; vertical-align:top;">
                 <ul id="sortable" class="sortable"></ul>
                 <div id="actualImageBox">
@@ -25,7 +25,7 @@
                     <div id="timeBox">
                         Time Taken: <span id="timerPanel"></span> secs
                     </div> -->
-                    <img id="actualImage" />
+                    <img id="actualImage"/>
                     <!-- <div>Re-arrange to create a picture like this.</div>
                     <p id="levelPanel">
                         <input type="radio" name="level" id="easy" checked="checked" value="3" /> <label for="easy">Easy</label>
@@ -45,12 +45,12 @@
         </div>
         
         <div id="gameOver" style="display:none;">
-            <div style="background-color: #427fc8; padding: 5px 10px 20px 10px; text-align: center; ">
-                <h3 style="text-align:center">You did it!</h3>
-                Congratulations!! <br /> You have revealed the theme of the 2023 USIA Artist Gala! 
+            <div style="background-color: #c64345; padding: 5px 10px 20px 10px; text-align: center; ">
+                <h3 style="text-align:center;font-family: 'Nohemi Bold';">You did it!</h3>
+                <p>Congratulations!! <br /> You have revealed the theme of the 2023 USIA Artist Gala! 
                 
                 <br /> Learn more about the theme below. 
-                <br />
+                <br /></p>
                 <!-- Steps: <span class="stepCount">0</span> steps.
                 <br />
                 Time Taken: <span class="timeCount">0</span> seconds<br /> -->
@@ -62,11 +62,7 @@
 
         <script>
             var images = [
-                // { src: 'images/london-bridge.jpg', title: 'London Bridge' },
-                // { src: 'images/lotus-temple.jpg', title: 'Lotus Temple' },
-                // { src: 'images/qutub-minar.jpg', title: 'Qutub Minar' },
-                // { src: 'images/statue-of-liberty.jpg', title: 'Statue Of Liberty' },
-                { src: 'images/galatheme.jpg', title: 'Taj Mahal' }
+                { src: 'images/gala-puzzle-picture.png', title: 'USIA Artist Gala Theme Reveal' }
             ];
 
             $(function () {
@@ -90,21 +86,33 @@
             }
         </script>
     </div>
+    <div id="image-grid" class="background">
+        <div class="row">
+            <div class="column">
+                <img src="images/bg-1.png">
+                <img src="images/bg-2.png">
+                <img src="images/bg-1.png">
+            </div>
+            <div class="column">
+                <img src="images/bg-3.png">
+                <img src="images/bg-4.png">
+                <img src="images/bg-2.png">
+            </div>
+        </div>
+    </div>
     <div id="theme-reveal" style="display:none;">
         <h2>About Form&Function</h2>
-        <p>Form&Function celebrates the interplay of visual beauty and practicality. It invites us to appreciate how art, design, and creative endeavors can be both visually captivating and purpose-driven. This theme emphasizes that the shape, structure, and style of artistic creations should not merely be ornamental but should also serve a meaningful function or purpose.
-            <br />
-            In the world of art and design, 'form' represents the visual aspects, such as the aesthetics, composition, and the artistic choices made by creators. 'Function,' on the other hand, signifies the practical aspects, including the intended use, functionality, and how the artwork or design serves a specific role or solves a problem.
-            <br />
-            Form&Function encourages us to explore the balance between these two elements, appreciating how they coexist and influence each other. It reminds us that art can be not only a source of inspiration but also a tool for innovation and problem-solving. We encourage you to delve into the intricate relationship between the beauty we perceive and the purpose it fulfills, creating a rich and thought-provoking experience.
-            </p>
+        <div class="theme-description">
+            <p>Form&Function celebrates the interplay of visual beauty and practicality. It invites us to appreciate how art, design, and creative endeavors can be both visually captivating and purpose-driven. This theme emphasizes that the shape, structure, and style of artistic creations should not merely be ornamental but should also serve a meaningful function or purpose.
+                </p><p>
+                In the world of art and design, 'form' represents the visual aspects, such as the aesthetics, composition, and the artistic choices made by creators. 'Function,' on the other hand, signifies the practical aspects, including the intended use, functionality, and how the artwork or design serves a specific role or solves a problem.
+                <br /></p>
+                <p>Form&Function encourages us to explore the balance between these two elements, appreciating how they coexist and influence each other. It reminds us that art can be not only a source of inspiration but also a tool for innovation and problem-solving. We encourage you to delve into the intricate relationship between the beauty we perceive and the purpose it fulfills, creating a rich and thought-provoking experience.
+                </p>
+                </p>
+        </div>
+        
 
-        <h2>Getting Ready for USIA</h2>
-        <ul>
-            <li>Date & Time</li>
-            <li>Link to RSVP</li>
-            <li>Dress Code Overview</li>
-        </ul>
     </div>
 </body>
 </html>
