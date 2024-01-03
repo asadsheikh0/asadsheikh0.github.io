@@ -45,7 +45,7 @@ p{
   }
   
   .column img {
-    margin-top: 8px;
+    /* margin-top: 8px; */
     vertical-align: middle;
     width: 65%;
     height: auto;
